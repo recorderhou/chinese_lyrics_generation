@@ -1,0 +1,8 @@
+18w*300的词向量，配上它们所对应的18w个词语。是一个约500MB的文件。
+
+词向量来源：
+Shen Li, Zhe Zhao, Renfen Hu, Wensi Li, Tao Liu, Xiaoyong Du, Analogical Reasoning on Chinese Morphological and Semantic Relations, ACL 2018.
+
+下载链接：
+https://github.com/Embedding/Chinese-Word-Vectors
+“Literature 文学作品-Word + Character + Ngram”
