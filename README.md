@@ -35,10 +35,12 @@ this program will generate the vocabulary based on raw word embedding and genera
 >"corresponding_word_path.json"
 
 "1_1_Make_Pinyin_Matrix.py"：这个程序利用插件pypinyin求出词表中每一个词韵脚的24维onehot表示，并生成：
+
 this program uses pypinyin to generate the one hot ryhme vector for every word in the vocabulary and generate the following file: 
 >"yayun_matrix.npy"
 
 "1_2_Count_word_lengths_in_Index.py"：这个程序生成记录每个词长度的：
+
 this program stores every word's word length in:
 >"word_len_matrix.npy"
 
@@ -52,15 +54,23 @@ step2: in the file "2_2_UI素材.rar" there are some picture and pre-defined lyr
 3：以下是一些不需要操作的文件：
 step3: here are files that do not need to change
 "Cut_Input_For_Raw.py" 里是几个基于jieba插件对输入模板、素材进行预处理的函数。
+
 in this file there are some preprocessing functions for templeate and materials base on jieba
+
 "Final_Deep_Model.py"里是一个基于Attention机制的seq2seq生成模型。
+
 in this file there is a seq2seq LSTM generator using attention and beam search.
+
 "Final_Shallow_Model.py"里是一个基于LSTM评价函数的生成模型。
+
 in this file there is a LSTM rater
+
 "generation_model"：这个文件夹里应该是Final_Deep_Model的模型参数，总大小约200MB，可以向我们索取。
+
 the parameters of Final_Deep_Model stores in this directory
 
 "models"：这个文件夹里应该是Final_Shallow_Model的模型参数，总大小约14MB，可以向我们索取。
+
 the parameters of Final_Shallow_Model stores in this directory
 
 4：以上步骤都完成之后，【奉码填词】就可以运行啦！
@@ -68,6 +78,7 @@ step4: run "FengMaTianCi"!
 >运行"奉码填词_浅.py"，使用基于"Final_Shallow_Model.py"的歌词生成器。
 >
 >  run"奉码填词_浅.py" to use lyrics generator bases on "Final_Shallow_Model.py"
+>  
 >运行"奉码填词_深.py"，使用基于"Final_Deep_Model.py"的歌词生成器。
 >
 >  run"奉码填词_深.py" to use lyrics generator bases on "Final_Deep_Model.py"
