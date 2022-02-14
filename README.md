@@ -85,3 +85,6 @@ step4: run "FengMaTianCi"!
 
 祝您体验愉快！
 Have Fun!
+
+#### GUI
+![gui_pic]("gui_pic.jpg")
