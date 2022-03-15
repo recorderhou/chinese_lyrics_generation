@@ -87,4 +87,4 @@ step4: run "FengMaTianCi"!
 Have Fun!
 
 #### GUI
-![gui_pic]("gui_pic.jpg")
+![gui_pic](gui_pic.jpg)
